@@ -10,7 +10,7 @@ import baseline from './baseline';
 const overrides: ConfigOverrides = {
   electronBuilder: {
     appId: 'com.collmot.skybrush.live-mission',
-    productName: 'Skybrush Live Mission',
+    productName: 'Drone Intelligence Mission',
   },
 
   features: {

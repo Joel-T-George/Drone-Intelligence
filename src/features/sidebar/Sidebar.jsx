@@ -3,9 +3,10 @@
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Alarm from '@material-ui/icons/Alarm';
-// import Apps from '@material-ui/icons/Apps';
+import Apps from '@material-ui/icons/Apps';
 import Assignment from '@material-ui/icons/Assignment';
 import Flight from '@material-ui/icons/Flight';
+import Camera from '@material-ui/icons/Camera';
 import Gamepad from '@material-ui/icons/Gamepad';
 import Grain from '@material-ui/icons/Grain';
 import Layers from '@material-ui/icons/Layers';
@@ -111,14 +112,7 @@ const Sidebar = ({
           label={t('view.uav-list')}
           component='uav-list'
         />
-        {hasFeature('beacons') && (
-          <Module
-            id='beacons'
-            icon={<Antenna />}
-            label={t('view.beacon-list')}
-            component='beacon-list'
-          />
-        )}
+        
         {hasFeature('docks') && experimentalFeaturesEnabled && (
           <Module
             id='docks'
@@ -129,31 +123,31 @@ const Sidebar = ({
         )}
         <hr />
         {/* Do not use a single React fragment here for the next section; it would confuse `react-flexible-workbench` */}
-        {hasShowControl && (
+        {/* {hasShowControl && (
           <Module
             id='show'
             icon={<Grain />}
             label={t('view.show-control')}
             component='show-control'
           />
-        )}
-        {hasShowControl && (
+        )} */}
+        {/* {hasShowControl && (
           <Module
             id='lights'
             icon={<WbSunny />}
             label={t('view.light-control')}
             component='light-control'
           />
-        )}
+        )} */}
         {hasShowControl && <hr />}
-        {hasMissionEditor && (
+         {hasMissionEditor && (
           <Module
             id='missionEditor'
             icon={<Route />}
             label={t('view.mission-editor')}
             component='mission-editor'
           />
-        )}
+        )} 
         {(hasShowControl || hasMissionEditor) && <hr />}
         <Module
           id='clocks'
@@ -169,25 +163,32 @@ const Sidebar = ({
           component="dataset-list"
         />
         */}
-        <Module
+        {/* <Module
           id='locations'
           icon={<Place />}
           label={t('view.saved-location-list')}
           component='saved-location-list'
-        />
+        /> */}
         <hr />
-        <Module
+        {/* <Module
           id='notes'
           icon={<Assignment />}
           label={t('view.field-notes')}
           component='field-notes'
-        />
-        <Module
+        /> */}
+        {/* <Module
           id='log'
           badge={<LogStatusBadge />}
           icon={<FormatListBulleted />}
           label={t('view.log-panel')}
           component='log-panel'
+        /> */}
+        <Module 
+          id='cameraControl'
+          icon={<Camera/>}
+          label={t('view.camera-control')}
+          component='camera-control'
+
         />
       </ModuleTray>
     </div>

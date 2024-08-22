@@ -86,14 +86,13 @@ if (APIKeys.MAPTILER) {
 // if (APIKeys.BING) {
 //   Sources.push(Source.BING.AERIAL_WITH_LABELS, Source.BING.ROAD);
 // }
-
 // if (APIKeys.GOOGLE) {
-//   Sources.push(
-//     Source.GOOGLE.DEFAULT,
-//     Source.GOOGLE.SATELLITE,
-//     Source.GOOGLE.ROADS
-//   );
-// }
+//    Sources.push(
+//    Source.GOOGLE.DEFAULT,
+//    Source.GOOGLE.SATELLITE,
+//    Source.GOOGLE.ROADS
+//  );
+//}
 
 const attributions = {
   mapbox: [

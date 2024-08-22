@@ -1,0 +1,31 @@
+.control-panel{
+    position: absolute;
+}
+.grid-container{
+    display:grid;
+
+    grid-template-columns: auto auto auto;
+    gap:5%
+}
+.grid-item {
+    border-color: none;
+    
+}
+.button-t {
+    display: block;
+    background-color: #04AA6D;
+    width:100%;
+    border: none;
+    color: white;
+    padding: 1rem ;
+    border-radius: 7%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-t:hover{
+    background-color: rgb(38, 38, 122);
+}

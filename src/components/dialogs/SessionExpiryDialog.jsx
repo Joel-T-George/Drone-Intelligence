@@ -20,7 +20,7 @@ const SessionExpiryDialog = ({ onClose, open }) => (
     <DialogTitle>Session expired</DialogTitle>
     <DialogContent>
       <DialogContentText>
-        Your demo session has expired. Thank you for evaluating Skybrush Live!
+        Your demo session has expired. Thank you for evaluating Drone Intelligence!
       </DialogContentText>
       <Button fullWidth onClick={onClose}>
         Click here to return to your Skybrush account

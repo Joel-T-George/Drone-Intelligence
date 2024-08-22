@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added a new "Field notes" panel to the sidebar that can be used to jot down
-  quick notes without having to leave Skybrush Live.
+  quick notes without having to leave Drone Intelligence.
 
 - Added a way to switch the selected UAV in the UAV Details Dialog by clicking
   the avatar at the top of the sidebar.
@@ -213,8 +213,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   different from the previous one.
 
 - You can now provide your own API keys to access Mapbox and Maptiler tile
-  services. In the absence of an API key, Skybrush Live falls back to using an
-  API key that is shared between all users of Skybrush Live. No guarantees are
+  services. In the absence of an API key, Drone Intelligence falls back to using an
+  API key that is shared between all users of Drone Intelligence. No guarantees are
   made regarding the availability of map tiles with the shared API keys, so you
   are advised to register your own API key to ensure access to map tiles from
   these providers.
@@ -222,7 +222,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Skybrush Server users with the offline maps extension can now benefit from
   server-side cached map tiles, which are extremely useful when you are running
   field tests without Internet access. All it takes is to load the map of the
-  test area from Skybrush Live with the cache enabled and zooming in and out a
+  test area from Drone Intelligence with the cache enabled and zooming in and out a
   bit to cover all zoom levels; the server will then remember the downloaded
   tiles and serve them to you even if you have no Internet access. Note that
   the server-side caching is not available in the community edition of the
@@ -254,7 +254,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0] - 2022-05-02
 
-The source code of Skybrush Live is now licensed under the GNU General Public
+The source code of Drone Intelligence is now licensed under the GNU General Public
 License, version 3 or later. You can find the source code on our Github account
 at https://github.com/skybrush-io
 
@@ -281,7 +281,7 @@ licensed under the GNU GPLv3. There are no breaking changes in this version.
   when the application exits.
 
 - Fixed the termination of the server process on macOS when the server is
-  launched automatically by Skybrush Live.
+  launched automatically by Drone Intelligence.
 
 - Fixed a bug that sometimes prevented workbench panels from being rendered
   correctly when they were freshly dragged off from the sidebar.
@@ -422,7 +422,7 @@ licensed under the GNU GPLv3. There are no breaking changes in this version.
 
 - Drones marked as "gone" in the UAV list are now considered "missing" in the
   "Setup takeoff area" dialog. Before this fix, only drones that were never seen
-  or were explicitly removed from Skybrush Live were considered missing.
+  or were explicitly removed from Drone Intelligence were considered missing.
 
 - Fixed a bug that prevented the system from recording two saved locations with
   the same name.
@@ -495,7 +495,7 @@ licensed under the GNU GPLv3. There are no breaking changes in this version.
 
 - The menu bar is now hidden on Windows and Linux.
 
-- Skybrush Live prevents the system from going to sleep automatically when it is
+- Drone Intelligence prevents the system from going to sleep automatically when it is
   connected to a server.
 
 ### Fixed

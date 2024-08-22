@@ -35,7 +35,7 @@ let localServerPathDeferred = pDefer();
 
 /**
  * The process representing the launched Skybrush server instance on this
- * machine. We only support one Skybrush server instance per Skybrush Live
+ * machine. We only support one Skybrush server instance per Drone Intelligence
  * process.
  */
 let localServerProcess;

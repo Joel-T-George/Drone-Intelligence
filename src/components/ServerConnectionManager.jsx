@@ -500,7 +500,10 @@ async function executeTasksAfterConnection(dispatch, getState) {
     response = await messageHub.sendMessage({
       type: 'CONN-INF',
       ids: connectionIds,
+
     });
+  
+
     handleConnectionInformationMessage(response.body, dispatch);
 
     // Send a CLK-LIST message to the server to get an up-to-date

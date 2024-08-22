@@ -10,7 +10,7 @@ const useHotModuleReloading = isDevelopment && process.env.DEPLOYMENT !== '1';
 const htmlMetaTags = {
   charset: 'utf-8',
   description:
-    'Skybrush Live: The Next-generation Drone Light Show Software Suite',
+    'Drone Intelligence: The Next-generation Drone Light Show Software Suite',
   viewport:
     'initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no',
 

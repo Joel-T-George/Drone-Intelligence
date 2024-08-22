@@ -489,6 +489,7 @@
   },
   "view": {
     "beacon-list": "Jeladók",
+    "camera-control": "",
     "dock-list": "Dokkok",
     "feature-list": "Objektumok",
     "field-notes": "Terepi jegyzetek",

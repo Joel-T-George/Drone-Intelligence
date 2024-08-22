@@ -29,6 +29,7 @@ import {
   hasFeature,
 } from './utils/configuration';
 import views from './views';
+import feature from '@collmot/ol-react/lib/feature';
 
 const FieldNotesPanel = loadable(
   () =>
@@ -97,6 +98,12 @@ export const componentRegistry = {
     label: 'Features',
     detachable: true,
     feature: 'features',
+  },
+  'camera-control':{
+    component:views.CameraControlPanel,
+    label:'Camera Control',
+   
+
   },
   'field-notes': {
     component: FieldNotesPanel,

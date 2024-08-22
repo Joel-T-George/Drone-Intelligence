@@ -1,4 +1,4 @@
-# Skybrush Live
+# Drone Intelligence
 
 This is the official desktop and web frontend for the Skybrush server.
 
@@ -29,7 +29,7 @@ This is the official desktop and web frontend for the Skybrush server.
 
 4. Start a development web server with `npm start` inside `skybrush-live`, and
    navigate to http://localhost:8080 from your browser. Alternatively, run
-   `npm run start:electron` to run Skybrush Live within its own desktop app
+   `npm run start:electron` to run Drone Intelligence within its own desktop app
    window.
 
 ## Support
@@ -41,12 +41,12 @@ server](https://skybrush.io/r/discord).
 
 Copyright 2018-2024 CollMot Robotics Ltd.
 
-Skybrush Live is free software: you can redistribute it and/or modify it under
+Drone Intelligence is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later
 version.
 
-Skybrush Live is distributed in the hope that it will be useful, but WITHOUT
+Drone Intelligence is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
 FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
 more details.

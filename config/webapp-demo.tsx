@@ -58,7 +58,7 @@ const overrides: ConfigOverrides = {
         selector: '#tour-welcome',
         content: (
           <>
-            <b>Welcome to Skybrush Live!</b>
+            <b>Welcome to Drone Intelligence!</b>
             <p>
               This online demo allows you to command a simulated fleet of 20
               drones to perform a drone light show, just like you would do it
@@ -75,7 +75,7 @@ const overrides: ConfigOverrides = {
         selector: '#main-map-view',
         content: (
           <>
-            <b>This is the map view of Skybrush Live.</b>
+            <b>This is the map view of Drone Intelligence.</b>
             <p>
               Right now it is positioned at Farkashegy Airfield near Budapest,
               Hungary, where we routinely test our drone shows.
@@ -92,7 +92,7 @@ const overrides: ConfigOverrides = {
         selector: '#sidebar',
         content: (
           <>
-            In fact, the entire user interface of Skybrush Live is based on tabs
+            In fact, the entire user interface of Drone Intelligence is based on tabs
             that you can freely resize and rearrange to build a layout that is
             the most convenient to you.
             <p>
@@ -141,7 +141,7 @@ const overrides: ConfigOverrides = {
             <b>Help is always just one click away.</b>
             <p>
               If you get stuck, click on the Help button in the header to open a
-              detailed tutorial about setting up a drone show in Skybrush Live.
+              detailed tutorial about setting up a drone show in Drone Intelligence.
             </p>
           </>
         ),
