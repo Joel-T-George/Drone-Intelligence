@@ -60,7 +60,7 @@
     "aframe-meshline-component": "^0.4.1",
     "arrify": "^3.0.0",
     "autosuggest-highlight": "^3.3.2",
-    "axios": "^1.7.3",
+    "axios": "^1.7.4",
     "buffer": "^6.0.3",
     "chart.js": "^3.8.0",
     "clsx": "^2.1.0",
