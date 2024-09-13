@@ -1,3 +1,4 @@
+
 import ControlButton from './ControlButton'
 //import 'video.js/dist/video.css'
 
@@ -5,13 +6,12 @@ import ControlButton from './ControlButton'
 
 //import axios from 'axios';
 
-import messageHub from '../../message-hub';
+import messageHub from '~/message-hub';
 
 import {useState,useEffect, useRef} from 'react'
 import PropTypes from 'prop-types';
 import '~/../assets/css/camera-control.css';
-import Control from 'ol/control/Control';
-import io from 'socket.io-client';
+
 
 
 // export function handleCameraControl (message, dispatch){
@@ -35,26 +35,6 @@ const VideoPlayer =({rtspUrl})=>{
     // const [frame,setFrame] = useState('');
     // const [rtspLink, setRtspUrl] = useState('');
 
-    // useEffect(()=>{
-    //     const socketio = io('http://localhost:8001')
-    //     setSocket(socketio);
-    //     setRtspUrl(rtspUrl)
-
-       
-
-    //     socket.on('video_frame',(data)=>{
-    //         setFrame('data:image/jpg;base64,'+data.frame);
-
-    //     });
-
-    //     if(socket && rtspLink){
-    //         socket.emit('start_streaming',{rtsp_url:rtspLink})
-    //     }
-    //     return ()=>{
-    //         socket.disconnect();
-    //     };
-
-    // },[rtspLink]);
 
     VideoPlayer.propTypes ={
         rtspUrl:PropTypes.string
@@ -62,9 +42,11 @@ const VideoPlayer =({rtspUrl})=>{
 
     return(   
 
-        <>
-          <img  src={frame} width="100%" height="100%" alt="RTSP Stream" style={{position:"relative", zIndex:"0"}}  />
-        </>
+    
+        <div style={{display:"flex",justifyContent:"center",alignItems:"center", width:"99%" , height:"99%", overflow:"hidden"}}>
+            <img style={{ objectFit:"contain",textAlign:"center", maxWidth:"99%", maxHeight:"99%"}} src='http://localhost:8086/video_feed/192.168.6.212'/>
+        </div>
+    
     )
 
 }
@@ -73,23 +55,24 @@ const CameraControlPanel = () =>{
 
     const handleMsg = async(msg) => {
         try{
-            const response = messageHub.sendMessage({
-                type:"X-CAMERA-CONTROL",
-                msg
-        })
-        console.log(response)
+                messageHub.sendMessage({
+                type:'X-CAMERA-CONTROL',
+                camera_ip:'192.168.6.212',
+                msg:msg })
+                
         }catch(e){
             console.log(e)
         }
     }
 
     return(
-        <>
-        <div style={{width:"100%", height:"100%", backgroundColor:"Black", color:"white", position:'block'}}>
-            <div style={{position:"absolute", height:"98%",width:"98%", zIndex:"1"}}>
+        
+        <div className='mastercontainer' style={{width:"100%", height:"100%", backgroundColor:"Black", color:"white", position:'relative'}}>
+            <div style={{position:"absolute", height:"100%",width:"100%", zIndex:"1"}}>
                 
-                <div >
-                    <div className='grid-container'>
+                <div  style={{position:'absolute', width:"100%", height:"30%", top:"60%"}}>
+
+                    <div className='grid-container' style={{ width:"10%"}}>
                         <div></div>
                         <ControlButton DisplayName="Up" onclick={handleMsg.bind(this,"up")} NotifyMessage="Clicked Up" />
                         <div></div>
@@ -100,12 +83,10 @@ const CameraControlPanel = () =>{
                         <ControlButton DisplayName="Down" onclick={handleMsg.bind(this,"down")} NotifyMessage="Clicked Down" />
                         <div></div>
                     </div>
-                    <div>
+
+                    <div style={{width:"10%"}}>
                         <ControlButton DisplayName="Zoom In" onclick={handleMsg.bind(this,"zoom-in")} NotifyMessage="Clicked Zoom In"/>
                         <ControlButton DisplayName="Zoom Out" onclick={handleMsg.bind(this,"zoom-out")} NotifyMessage="Clicked Zoom Out"/>
-                    </div>
-                    <div>
-
                     </div>
                    
                    
@@ -113,13 +94,17 @@ const CameraControlPanel = () =>{
 
                 
             </div>
+           
+
+            <VideoPlayer rtspUrl={"localhost"}/>
+            
 
 
             
         </div>
 
            
-        </>
+        
     )
     
 }

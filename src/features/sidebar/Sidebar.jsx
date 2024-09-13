@@ -163,12 +163,12 @@ const Sidebar = ({
           component="dataset-list"
         />
         */}
-        {/* <Module
+        <Module
           id='locations'
           icon={<Place />}
           label={t('view.saved-location-list')}
           component='saved-location-list'
-        /> */}
+        /> 
         <hr />
         {/* <Module
           id='notes'

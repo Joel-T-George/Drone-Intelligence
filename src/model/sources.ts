@@ -75,6 +75,7 @@ if (APIKeys.MAPTILER) {
     Source.MAPTILER.SATELLITE,
     Source.MAPTILER.HYBRID
   );
+ 
 }
 
 // Nextzen tiles do not look nice because we

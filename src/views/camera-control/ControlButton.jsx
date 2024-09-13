@@ -13,20 +13,21 @@ const ControlButton = ({DisplayName,NotifyMessage, onclick}) => {
 
   
   const handleClick =  async (event) => {
+    onclick()
     
     
-    console.log(event.target.innerText);
+    
     
 
     
 
-    dispatch(
-      showNotification({
-      message:NotifyMessage,
-      semantics:MessageSemantics.SUCCESS,
-      timeout:2000,
-      })
-    )
+    // dispatch(
+    //   showNotification({
+    //   message:NotifyMessage,
+    //   semantics:MessageSemantics.SUCCESS,
+    //   timeout:2000,
+    //   })
+    // )
   }
 
   ControlButton.propTypes ={

@@ -174,7 +174,7 @@ const LayerSourcePresentation = ({ apiKeys, tileLoadFunction, type }) => {
           tileLoadFunction={tileLoadFunction}
           tilePixelRatio={2}
           tileSize={512}
-          url={`https://api.maptiler.com/maps/streets/{z}/{x}/{y}@2x.png?key=${apiKeys.MAPTILER}`}
+          url={`https://api.maptiler.com/maps/satellite/{z}/{x}/{y}.png?key=${apiKeys.MAPTILER}`}
         />
       );
 

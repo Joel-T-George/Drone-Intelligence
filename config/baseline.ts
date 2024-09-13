@@ -115,8 +115,9 @@ const baseline: Config = {
     ],
 
     origin: {
-      position: [19.0622, 47.4733],
+      position: [80.20375481083215,13.355923276133183 ],
       angle: '348',
+      
     },
 
     view: {

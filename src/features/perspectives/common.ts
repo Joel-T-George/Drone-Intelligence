@@ -5,7 +5,7 @@ import { type PerspectiveName, type PerspectiveObject } from 'perspective';
  * by their names only */
 const commonLayouts: Record<PerspectiveName, PerspectiveObject> = {
   default: {
-    label: 'Default',
+    label: 'Drone-Intelligence',
     layout: {
       type: 'columns',
       contents: [

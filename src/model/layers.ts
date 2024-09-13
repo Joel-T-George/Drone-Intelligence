@@ -26,6 +26,7 @@ import type OLMap from 'ol/Map';
 
 import Antenna from '~/icons/Antenna';
 
+
 /**
  * Enum containing constants for the various layer types that we support.
  */
@@ -118,7 +119,7 @@ const propertiesForLayerTypes: Record<
     label: 'Base layer',
     icon: Map,
     parameters: {
-      source: 'osm',
+      source: 'maptiler',
     },
   },
   [LayerType.BEACONS]: {
